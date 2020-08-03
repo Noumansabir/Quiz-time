@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Quiz-time-App-Nouman
+name: Quiz-time-by-Nouman
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -37,4 +37,4 @@ jobs:
       run: npm install --global surge
       
     - name: Deploy to Surge
-      run: surge ./ build quiz-time-by-nouman.surge.sh.surge.sh --token ${{secrets.QUIZ_DONE}}
+      run: surge ./build quiz-time-by-nouman.surge.sh --token ${{secrets.QUIZ_DONE}}
